@@ -142,8 +142,8 @@ importers:
         specifier: 17.17.0
         version: 17.17.0(eslint@9.24.0(jiti@2.4.2))
       eslint-plugin-package-json:
-        specifier: 0.29.0
-        version: 0.29.0(@types/estree@1.0.7)(eslint@9.24.0(jiti@2.4.2))(jsonc-eslint-parser@2.4.0)
+        specifier: 0.29.1
+        version: 0.29.1(@types/estree@1.0.7)(eslint@9.24.0(jiti@2.4.2))(jsonc-eslint-parser@2.4.0)
       eslint-plugin-perfectionist:
         specifier: 4.11.0
         version: 4.11.0(eslint@9.24.0(jiti@2.4.2))(typescript@5.8.3)
@@ -1158,13 +1158,6 @@ packages:
     resolution: {integrity: sha512-2nggXGX5F3YrsGN08pw4XpMLO1Rgtnn4AzTegC2MDesv6q3QaTU5yU7IbS1tf1IwCR0Hv/1EFygLn9ms6LIpDA==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
-  '@typescript-eslint/type-utils@8.29.0':
-    resolution: {integrity: sha512-ahaWQ42JAOx+NKEf5++WC/ua17q5l+j1GFrbbpVKzFL/tKVc0aYY8rVSYUpUvt2hUP1YBr7mwXzx+E/DfUWI9Q==}
-    engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
-    peerDependencies:
-      eslint: ^8.57.0 || ^9.0.0
-      typescript: '>=4.8.4 <5.9.0'
-
   '@typescript-eslint/type-utils@8.29.1':
     resolution: {integrity: sha512-DkDUSDwZVCYN71xA4wzySqqcZsHKic53A4BLqmrWFFpOpNSoxX233lwGu/2135ymTCR04PoKiEEEvN1gFYg4Tw==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
@@ -1994,8 +1987,8 @@ packages:
     peerDependencies:
       eslint: '>=8.23.0'
 
-  eslint-plugin-package-json@0.29.0:
-    resolution: {integrity: sha512-S2YjWLMb+vaI0QbvkSrM6F2lEulaehGWEgHAXSoJI0F2eDw4udp5gtdFyKMLP2GSrfJB5cnKPnSJiOO5RGuaKg==}
+  eslint-plugin-package-json@0.29.1:
+    resolution: {integrity: sha512-4Jn1YO0JJyqs2W7Tt9I0QahQ0sPc2G5hLcWBUxkTdVF84Rdn+bVm9NY/XbjVJOlujkgZAK8Hi8irv+Mx4aTqaw==}
     engines: {node: '>=18'}
     peerDependencies:
       eslint: '>=8.0.0'
@@ -5096,17 +5089,6 @@ snapshots:
       '@typescript-eslint/types': 8.29.1
       '@typescript-eslint/visitor-keys': 8.29.1
 
-  '@typescript-eslint/type-utils@8.29.0(eslint@9.24.0(jiti@2.4.2))(typescript@5.8.3)':
-    dependencies:
-      '@typescript-eslint/typescript-estree': 8.29.0(typescript@5.8.3)
-      '@typescript-eslint/utils': 8.29.0(eslint@9.24.0(jiti@2.4.2))(typescript@5.8.3)
-      debug: 4.4.0
-      eslint: 9.24.0(jiti@2.4.2)
-      ts-api-utils: 2.1.0(typescript@5.8.3)
-      typescript: 5.8.3
-    transitivePeerDependencies:
-      - supports-color
-
   '@typescript-eslint/type-utils@8.29.1(eslint@9.24.0(jiti@2.4.2))(typescript@5.8.3)':
     dependencies:
       '@typescript-eslint/typescript-estree': 8.29.1(typescript@5.8.3)
@@ -6098,7 +6080,7 @@ snapshots:
       minimatch: 9.0.5
       semver: 7.7.1
 
-  eslint-plugin-package-json@0.29.0(@types/estree@1.0.7)(eslint@9.24.0(jiti@2.4.2))(jsonc-eslint-parser@2.4.0):
+  eslint-plugin-package-json@0.29.1(@types/estree@1.0.7)(eslint@9.24.0(jiti@2.4.2))(jsonc-eslint-parser@2.4.0):
     dependencies:
       '@altano/repository-tools': 0.1.1
       detect-indent: 6.1.0
