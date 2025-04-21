@@ -5,20 +5,8 @@
     ".dependency-cruiser.js"
   ],
   "ignoreDependencies": [
-    // Ran by `lefthook`, and potentially also by developer/automation
-    "@commitlint/cli",
-
-    // Used implicitly by `eslint-config-next`
-    "@next/eslint-plugin-next",
-
-    // Extended indirectly from within `eslint.config.js`
-    "eslint-config-next",
-
     // Used implicitly by `eslint-plugin-import-x`
     "eslint-import-resolver-typescript",
-
-    // Used implicitly by `eslint-config-next`
-    "eslint-plugin-react-hooks",
 
     // Imported by main CSS file
     "tailwindcss"

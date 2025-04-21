@@ -6,6 +6,7 @@
     "allowUnreachableCode": false,
     "allowUnusedLabels": false,
     "checkJs": true,
+    "erasableSyntaxOnly": true,
     "exactOptionalPropertyTypes": true,
     "incremental": true,
     "jsx": "preserve",
@@ -29,10 +30,5 @@
     "verbatimModuleSyntax": true
   },
   "exclude": ["out"],
-  "include": [
-    "next-env.d.ts",
-    "**/*",
-    ".dependency-cruiser.js",
-    ".next/types/**/*.ts"
-  ]
+  "include": ["**/*", ".dependency-cruiser.js", ".next/types/**/*.ts"]
 }

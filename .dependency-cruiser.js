@@ -183,7 +183,7 @@ const config = {
     /* Which modules not to follow further when encountered */
     doNotFollow: {
       /* path: an array of regular expressions in strings to match against */
-      path: ['node_modules', 'dist', '.next', 'out'],
+      path: ['node_modules', '.next', 'out'],
     },
 
     /* options to pass on to enhanced-resolve, the package dependency-cruiser

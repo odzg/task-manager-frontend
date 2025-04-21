@@ -1,9 +1,10 @@
 // @ts-expect-error Currently does not include a type-declaration file
 import comments from '@eslint-community/eslint-plugin-eslint-comments/configs';
 import react from '@eslint-react/eslint-plugin';
-import { FlatCompat } from '@eslint/eslintrc';
 import js from '@eslint/js';
 import markdown from '@eslint/markdown';
+// @ts-expect-error Currently does not include a type-declaration file
+import next from '@next/eslint-plugin-next';
 import gitignore from 'eslint-config-flat-gitignore';
 import eslintConfigPrettier from 'eslint-config-prettier/flat';
 import cssPlugin from 'eslint-plugin-css';
@@ -12,13 +13,17 @@ import eslintPluginImportX from 'eslint-plugin-import-x';
 import jsdoc from 'eslint-plugin-jsdoc';
 import eslintPluginJsonSchemaValidator from 'eslint-plugin-json-schema-validator';
 import eslintPluginJsonc from 'eslint-plugin-jsonc';
+// @ts-expect-error Currently does not include a type-declaration file
+import jsxA11y from 'eslint-plugin-jsx-a11y';
 import eslintPluginMath from 'eslint-plugin-math';
-import nodePlugin from 'eslint-plugin-n';
+// import nodePlugin from 'eslint-plugin-n';
 import packageJson from 'eslint-plugin-package-json';
 import perfectionist from 'eslint-plugin-perfectionist';
 // @ts-expect-error Currently does not include a type-declaration file
 import pluginPromise from 'eslint-plugin-promise';
+import reactPlugin from 'eslint-plugin-react';
 import reactCompiler from 'eslint-plugin-react-compiler';
+import reactHooks from 'eslint-plugin-react-hooks';
 import reactRefresh from 'eslint-plugin-react-refresh';
 import regexpPlugin from 'eslint-plugin-regexp';
 // @ts-expect-error Currently does not include a type-declaration file
@@ -32,10 +37,6 @@ import tseslint from 'typescript-eslint';
 
 const GLOB_JS = '**/*.?([cm])js';
 const GLOB_TS = '**/*.?([cm])ts?(x)';
-
-const compat = new FlatCompat({
-  baseDirectory: import.meta.dirname,
-});
 
 export default typegen(
   defineConfig([
@@ -54,6 +55,7 @@ export default typegen(
         tseslint.configs.recommendedTypeChecked,
         tseslint.configs.strictTypeChecked,
         tseslint.configs.stylisticTypeChecked,
+        react.configs['recommended-type-checked'],
       ],
       files: [GLOB_JS, GLOB_TS],
       languageOptions:
@@ -107,18 +109,27 @@ export default typegen(
     perfectionist.configs['recommended-natural'],
     eslintPluginYml.configs['flat/recommended'],
     eslintPluginYml.configs['flat/prettier'],
-    nodePlugin.configs['flat/recommended'],
+    // nodePlugin.configs['flat/recommended'],
     eslintPluginImportX.flatConfigs.recommended,
     eslintPluginImportX.flatConfigs.typescript,
-    {
-      extends: [
-        react.configs['recommended-type-checked'],
-        compat.extends('next/core-web-vitals', 'next/typescript'),
-      ],
-      files: [GLOB_JS, GLOB_TS],
-    },
+    reactHooks.configs.recommended,
+    reactPlugin.configs.flat.recommended,
+    reactPlugin.configs.flat['jsx-runtime'],
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access -- No type declaration
+    jsxA11y.flatConfigs.recommended,
     reactCompiler.configs.recommended,
     reactRefresh.configs.recommended,
+    {
+      files: ['src/app/**/*'],
+      rules: {
+        'react-refresh/only-export-components': [
+          'error',
+          {
+            allowExportNames: ['metadata'],
+          },
+        ],
+      },
+    },
     eslintPluginUnicorn.configs.recommended,
     sonarjs.configs.recommended,
     regexpPlugin.configs['flat/recommended'],
@@ -126,6 +137,8 @@ export default typegen(
     eslintPluginMath.configs.recommended,
     cssPlugin.configs['flat/standard'],
     packageJson.configs.recommended,
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access -- No type declaration
+    next.flatConfig.coreWebVitals,
     {
       rules: {
         '@eslint-community/eslint-comments/require-description': 'error',
