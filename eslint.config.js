@@ -52,7 +52,6 @@ export default typegen(
     js.configs.recommended,
     {
       extends: [
-        tseslint.configs.recommendedTypeChecked,
         tseslint.configs.strictTypeChecked,
         tseslint.configs.stylisticTypeChecked,
         react.configs['recommended-type-checked'],
