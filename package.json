@@ -8,7 +8,7 @@
     "#*": "./src/*"
   },
   "scripts": {
-    "build": "next build",
+    "build": "next build --turbopack",
     "commit": "commit",
     "commitlint": "commitlint",
     "dev": "next dev --turbopack",
