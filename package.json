@@ -14,7 +14,7 @@
     "dev": "next dev --turbopack",
     "format": "prettier --write --cache .",
     "format:check": "prettier --check --cache .",
-    "lint": "eslint --max-warnings=0 .",
+    "lint": "pnpm --node-options=--experimental-strip-types=true eslint --max-warnings=0 --flag=unstable_native_nodejs_ts_config .",
     "start": "next start",
     "typecheck": "tsc"
   },
