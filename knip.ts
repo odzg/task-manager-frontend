@@ -5,10 +5,6 @@ export default {
   compilers: {
     css: (text: string) => [...text.matchAll(/(?<=@)import[^;]+/g)].join('\n'),
   },
-  entry: [
-    // Config file of `dependency-cruiser`
-    '.dependency-cruiser.js',
-  ],
   ignoreDependencies: [
     // Used implicitly by `eslint-plugin-import-x`
     'eslint-import-resolver-typescript',
