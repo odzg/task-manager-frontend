@@ -1,5 +1,5 @@
 /** @type {import('dependency-cruiser').IConfiguration} */
-const config = {
+export default {
   forbidden: [
     {
       comment:
@@ -356,5 +356,3 @@ const config = {
     tsPreCompilationDeps: true,
   },
 };
-
-export default config;
