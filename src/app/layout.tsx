@@ -2,7 +2,7 @@ import './globals.css';
 
 import type { ReactNode } from 'react';
 
-import { GlobalStyles, ThemeProvider } from '@mui/material';
+import { ThemeProvider } from '@mui/material';
 import { AppRouterCacheProvider } from '@mui/material-nextjs/v15-appRouter';
 import { Inter } from 'next/font/google';
 
@@ -28,7 +28,6 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.variable}>
         <AppRouterCacheProvider options={{ enableCssLayer: true }}>
-          <GlobalStyles styles="@layer theme,base,mui,components,utilities;" />
           <ThemeProvider theme={theme}>{children}</ThemeProvider>
         </AppRouterCacheProvider>
       </body>
