@@ -16,7 +16,7 @@ import eslintPluginJsonc from 'eslint-plugin-jsonc';
 // @ts-expect-error Currently does not include a type-declaration file
 import jsxA11y from 'eslint-plugin-jsx-a11y';
 import eslintPluginMath from 'eslint-plugin-math';
-// import nodePlugin from 'eslint-plugin-n';
+import nodePlugin from 'eslint-plugin-n';
 import packageJson from 'eslint-plugin-package-json';
 import perfectionist from 'eslint-plugin-perfectionist';
 // @ts-expect-error Currently does not include a type-declaration file
@@ -100,7 +100,7 @@ export default typegen(
     perfectionist.configs['recommended-natural'],
     eslintPluginYml.configs['flat/recommended'],
     eslintPluginYml.configs['flat/prettier'],
-    // nodePlugin.configs['flat/recommended'],
+    nodePlugin.configs['flat/recommended'],
     eslintPluginImportX.flatConfigs.recommended,
     eslintPluginImportX.flatConfigs.typescript,
     reactHooks.configs.recommended,
