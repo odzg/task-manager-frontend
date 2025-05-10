@@ -2,7 +2,12 @@ import type { KnipConfig } from 'knip';
 
 export default {
   compilers: {
-    css: (text: string) => [...text.matchAll(/(?<=@)import[^;]+/g)].join('\n'),
+    // Detect dependencies imported through `@import` statements within CSS files
+    css: (text) =>
+      text
+        .matchAll(/(?<=@)import[^;]+/g)
+        .toArray()
+        .join('\n'),
   },
   ignoreDependencies: [
     // Used implicitly by `eslint-plugin-import-x`
