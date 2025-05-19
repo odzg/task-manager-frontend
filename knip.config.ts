@@ -9,9 +9,5 @@ export default {
         .toArray()
         .join('\n'),
   },
-  ignoreDependencies: [
-    // Used implicitly by `eslint-plugin-import-x`
-    'eslint-import-resolver-typescript',
-  ],
   treatConfigHintsAsErrors: true,
 } satisfies KnipConfig;
