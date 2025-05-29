@@ -1,0 +1,16 @@
+archi
+bradlc
+dbaeumer
+demorgan
+depcruise
+esbenp
+evenodd
+jsons
+lefthook
+njsproj
+ntvs
+remeda
+sonarjs
+syncpack
+turbopack
+typegen
