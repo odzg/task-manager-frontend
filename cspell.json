@@ -1,6 +1,12 @@
 {
   "$schema": "https://raw.githubusercontent.com/streetsidesoftware/cspell/main/cspell.schema.json",
-  "dictionaries": ["@custom-dictionaries/tooling"],
+  "dictionaries": [
+    "@custom-dictionaries/tooling",
+    "css",
+    "en-gb",
+    "git",
+    "npm"
+  ],
   "dictionaryDefinitions": [
     {
       "addWords": true,

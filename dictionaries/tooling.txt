@@ -1,13 +1,9 @@
 archi
 bradlc
-COMMIT_EDITMSG
 dbaeumer
-demorgan
 depcruise
 esbenp
-evenodd
 jsons
-knip
 lefthook
 njsproj
 ntvs
@@ -15,4 +11,3 @@ remeda
 sonarjs
 syncpack
 turbopack
-typegen
