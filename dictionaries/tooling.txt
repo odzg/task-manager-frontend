@@ -7,6 +7,7 @@ depcruise
 esbenp
 evenodd
 jsons
+knip
 lefthook
 njsproj
 ntvs
