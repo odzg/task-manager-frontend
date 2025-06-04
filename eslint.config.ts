@@ -233,10 +233,7 @@ export default typegen(
         'unicorn/prevent-abbreviations': [
           'error',
           {
-            allowList: {
-              EnvSchema: true,
-            },
-            ignore: [/^env$/, /props$/i, /params$/i],
+            ignore: [/env/i, /props$/i, /params$/i],
           },
         ],
       },
