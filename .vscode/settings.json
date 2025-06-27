@@ -26,8 +26,20 @@
   "files.encoding": "utf8",
   "files.eol": "\n",
   "files.insertFinalNewline": true,
+  "files.readonlyInclude": {
+    // Auto-generated but not gitignored
+    "pnpm-lock.yaml": true
+  },
+  "files.watcherExclude": {
+    // Auto-generated but not gitignored
+    "pnpm-lock.yaml": true
+  },
   "javascript.format.enable": false,
   "javascript.preferences.quoteStyle": "single",
+  "search.exclude": {
+    // Auto-generated but not gitignored
+    "pnpm-lock.yaml": true
+  },
   "tailwindCSS.classAttributes": [
     "class",
     "className",
@@ -35,7 +47,6 @@
     // For the `classes` prop of MUI components
     "classes"
   ],
-
   "tailwindCSS.experimental.classRegex": [
     // For utils from the `tailwind-merge` library, and for the `twObject` and `twConsumeCssVariable` utils
     [
