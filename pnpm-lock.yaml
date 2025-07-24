@@ -31,7 +31,7 @@ importers:
         version: 7.2.0(@emotion/cache@11.14.0)(@emotion/react@11.14.0(@types/react@19.1.8)(react@19.1.0))(@types/react@19.1.8)(next@15.4.3(@babel/core@7.28.0)(babel-plugin-react-compiler@19.1.0-rc.2)(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react@19.1.0)
       '@t3-oss/env-nextjs':
         specifier: 0.13.8
-        version: 0.13.8(typescript@5.8.3)(zod@4.0.8)
+        version: 0.13.8(typescript@5.8.3)(zod@4.0.9)
       date-fns:
         specifier: 4.1.0
         version: 4.1.0
@@ -57,8 +57,8 @@ importers:
         specifier: 3.3.1
         version: 3.3.1
       zod:
-        specifier: 4.0.8
-        version: 4.0.8
+        specifier: 4.0.9
+        version: 4.0.9
     devDependencies:
       '@commitlint/cli':
         specifier: 19.8.1
@@ -4444,8 +4444,8 @@ packages:
   zod@3.25.76:
     resolution: {integrity: sha512-gzUt/qt81nXsFGKIFcC3YnfEAx5NkunCfnDlvuBSSFS02bcXu4Lmea0AFIUwbLWxWPx3d9p8S5QoaujKcNQxcQ==}
 
-  zod@4.0.8:
-    resolution: {integrity: sha512-+MSh9cZU9r3QKlHqrgHMTSr3QwMGv4PLfR0M4N/sYWV5/x67HgXEhIGObdBkpnX8G78pTgWnIrBL2lZcNJOtfg==}
+  zod@4.0.9:
+    resolution: {integrity: sha512-PAqUh1FW4Irxcs6/sWfnhJGV/8F0eLNd1FryydBfbA9Qvz1LaJk0TDrSC+hIKlArS/xVISuX/yjlS1bzg2D3Zw==}
 
   zwitch@2.0.4:
     resolution: {integrity: sha512-bXE4cR/kVZhKZX/RjPEflHaKVhUVl85noU3v6b8apfQEc1x4A+zBxjZ4lN8LqGd6WZ3dl98pY4o717VFmoPp+A==}
@@ -5143,7 +5143,7 @@ snapshots:
       '@eslint-react/eff': 1.52.3
       '@typescript-eslint/utils': 8.36.0(eslint@9.31.0(jiti@2.4.2))(typescript@5.8.3)
       ts-pattern: 5.7.1
-      zod: 4.0.8
+      zod: 4.0.9
     transitivePeerDependencies:
       - eslint
       - supports-color
@@ -5155,7 +5155,7 @@ snapshots:
       '@eslint-react/kit': 1.52.3(eslint@9.31.0(jiti@2.4.2))(typescript@5.8.3)
       '@typescript-eslint/utils': 8.36.0(eslint@9.31.0(jiti@2.4.2))(typescript@5.8.3)
       ts-pattern: 5.7.1
-      zod: 4.0.8
+      zod: 4.0.9
     transitivePeerDependencies:
       - eslint
       - supports-color
@@ -5583,17 +5583,17 @@ snapshots:
     dependencies:
       tslib: 2.8.1
 
-  '@t3-oss/env-core@0.13.8(typescript@5.8.3)(zod@4.0.8)':
+  '@t3-oss/env-core@0.13.8(typescript@5.8.3)(zod@4.0.9)':
     optionalDependencies:
       typescript: 5.8.3
-      zod: 4.0.8
+      zod: 4.0.9
 
-  '@t3-oss/env-nextjs@0.13.8(typescript@5.8.3)(zod@4.0.8)':
+  '@t3-oss/env-nextjs@0.13.8(typescript@5.8.3)(zod@4.0.9)':
     dependencies:
-      '@t3-oss/env-core': 0.13.8(typescript@5.8.3)(zod@4.0.8)
+      '@t3-oss/env-core': 0.13.8(typescript@5.8.3)(zod@4.0.9)
     optionalDependencies:
       typescript: 5.8.3
-      zod: 4.0.8
+      zod: 4.0.9
 
   '@tailwindcss/node@4.1.11':
     dependencies:
@@ -9275,6 +9275,6 @@ snapshots:
 
   zod@3.25.76: {}
 
-  zod@4.0.8: {}
+  zod@4.0.9: {}
 
   zwitch@2.0.4: {}
