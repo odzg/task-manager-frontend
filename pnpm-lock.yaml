@@ -31,7 +31,7 @@ importers:
         version: 7.3.0(@emotion/cache@11.14.0)(@emotion/react@11.14.0(@types/react@19.1.12)(react@19.1.1))(@types/react@19.1.12)(next@15.5.2(@babel/core@7.28.0)(babel-plugin-react-compiler@19.1.0-rc.2)(react-dom@19.1.1(react@19.1.1))(react@19.1.1))(react@19.1.1)
       '@t3-oss/env-nextjs':
         specifier: 0.13.8
-        version: 0.13.8(typescript@5.9.2)(zod@4.1.4)
+        version: 0.13.8(typescript@5.9.2)(zod@4.1.5)
       date-fns:
         specifier: 4.1.0
         version: 4.1.0
@@ -57,8 +57,8 @@ importers:
         specifier: 3.3.1
         version: 3.3.1
       zod:
-        specifier: 4.1.4
-        version: 4.1.4
+        specifier: 4.1.5
+        version: 4.1.5
     devDependencies:
       '@commitlint/cli':
         specifier: 19.8.1
@@ -4430,8 +4430,8 @@ packages:
   zod@3.25.76:
     resolution: {integrity: sha512-gzUt/qt81nXsFGKIFcC3YnfEAx5NkunCfnDlvuBSSFS02bcXu4Lmea0AFIUwbLWxWPx3d9p8S5QoaujKcNQxcQ==}
 
-  zod@4.1.4:
-    resolution: {integrity: sha512-2YqJuWkU6IIK9qcE4k1lLLhyZ6zFw7XVRdQGpV97jEIZwTrscUw+DY31Xczd8nwaoksyJUIxCojZXwckJovWxA==}
+  zod@4.1.5:
+    resolution: {integrity: sha512-rcUUZqlLJgBC33IT3PNMgsCq6TzLQEG/Ei/KTCU0PedSWRMAXoOUN+4t/0H+Q8bdnLPdqUYnvboJT0bn/229qg==}
 
   zod@4.1.5:
     resolution: {integrity: sha512-rcUUZqlLJgBC33IT3PNMgsCq6TzLQEG/Ei/KTCU0PedSWRMAXoOUN+4t/0H+Q8bdnLPdqUYnvboJT0bn/229qg==}
@@ -5603,17 +5603,17 @@ snapshots:
     dependencies:
       tslib: 2.8.1
 
-  '@t3-oss/env-core@0.13.8(typescript@5.9.2)(zod@4.1.4)':
+  '@t3-oss/env-core@0.13.8(typescript@5.9.2)(zod@4.1.5)':
     optionalDependencies:
       typescript: 5.9.2
-      zod: 4.1.4
+      zod: 4.1.5
 
-  '@t3-oss/env-nextjs@0.13.8(typescript@5.9.2)(zod@4.1.4)':
+  '@t3-oss/env-nextjs@0.13.8(typescript@5.9.2)(zod@4.1.5)':
     dependencies:
-      '@t3-oss/env-core': 0.13.8(typescript@5.9.2)(zod@4.1.4)
+      '@t3-oss/env-core': 0.13.8(typescript@5.9.2)(zod@4.1.5)
     optionalDependencies:
       typescript: 5.9.2
-      zod: 4.1.4
+      zod: 4.1.5
 
   '@tailwindcss/node@4.1.12':
     dependencies:
@@ -9239,7 +9239,7 @@ snapshots:
 
   zod@3.25.76: {}
 
-  zod@4.1.4: {}
+  zod@4.1.5: {}
 
   zod@4.1.5: {}
 
