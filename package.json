@@ -35,7 +35,7 @@
     "next": "15.5.3",
     "react": "19.1.1",
     "react-dom": "19.1.1",
-    "react-hook-form": "7.62.0",
+    "react-hook-form": "7.63.0",
     "remeda": "2.31.1",
     "tailwind-merge": "3.3.1",
     "zod": "4.1.9"
