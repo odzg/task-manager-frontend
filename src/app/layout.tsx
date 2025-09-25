@@ -1,5 +1,6 @@
 import './globals.css';
 
+import type { Metadata } from 'next';
 import type { ReactNode } from 'react';
 
 import { ThemeProvider } from '@mui/material';
@@ -14,7 +15,7 @@ const inter = Inter({
   variable: '--font-inter',
 });
 
-export const metadata = {
+export const metadata: Metadata = {
   description: 'Full-stack task management app',
   title: 'Task Manager',
 };
