@@ -137,16 +137,6 @@ export default typegen(
     // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access -- No type declaration
     jsxA11y.flatConfigs.recommended as Linter.Config,
     reactRefresh.configs.next,
-    {
-      files: ['src/app/**/*'],
-      name: 'react-refresh/allow-nextjs-specific-exports',
-      rules: {
-        'react-refresh/only-export-components': [
-          'error',
-          { allowExportNames: ['metadata'] },
-        ],
-      },
-    },
     eslintPluginUnicorn.configs.recommended,
     sonarjs.configs.recommended,
     {
