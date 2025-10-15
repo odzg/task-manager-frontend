@@ -36,8 +36,8 @@ importers:
         specifier: 4.1.0
         version: 4.1.0
       ky:
-        specifier: 1.11.0
-        version: 1.11.0
+        specifier: 1.12.0
+        version: 1.12.0
       next:
         specifier: 15.5.5
         version: 15.5.5(@babel/core@7.28.0)(babel-plugin-react-compiler@19.1.0-rc.3)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
@@ -3111,8 +3111,8 @@ packages:
       '@types/node': '>=18'
       typescript: '>=5.0.4 <7'
 
-  ky@1.11.0:
-    resolution: {integrity: sha512-NEyo0ICpS0cqSuyoJFMCnHOZJILqXsKhIZlHJGDYaH8OB5IFrGzuBpEwyoMZG6gUKMPrazH30Ax5XKaujvD8ag==}
+  ky@1.12.0:
+    resolution: {integrity: sha512-YRLmSUHCwOJRBMArtqMRLOmO7fewn3yOoui6aB8ERkRVXupa0UiaQaKbIXteMt4jUElhbdqTMsLFHs8APxxUoQ==}
     engines: {node: '>=18'}
 
   language-subtag-registry@0.3.23:
@@ -7757,7 +7757,7 @@ snapshots:
       typescript: 5.9.3
       zod: 4.1.12
 
-  ky@1.11.0: {}
+  ky@1.12.0: {}
 
   language-subtag-registry@0.3.23: {}
 
