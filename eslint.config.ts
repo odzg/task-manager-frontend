@@ -5,7 +5,7 @@ import comments from '@eslint-community/eslint-plugin-eslint-comments/configs';
 import react from '@eslint-react/eslint-plugin';
 import js from '@eslint/js';
 import markdown from '@eslint/markdown';
-import next from '@next/eslint-plugin-next';
+import nextPlugin from '@next/eslint-plugin-next';
 import gitignore from 'eslint-config-flat-gitignore';
 import eslintConfigPrettier from 'eslint-config-prettier/flat';
 import deMorgan from 'eslint-plugin-de-morgan';
@@ -160,9 +160,7 @@ export default typegen(
       ...moduleInterop.configs.recommended,
     },
     packageJson.configs.recommended,
-    // @ts-expect-error Type definitions included within the Next.js ESLint plugin are incorrect
-    // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access -- As explained in the `@ts-expect-error` comment above
-    next.flatConfig.coreWebVitals as Linter.Config,
+    nextPlugin.configs['core-web-vitals'],
     eslintConfigPrettier,
     {
       linterOptions: {
