@@ -9,7 +9,7 @@
     "erasableSyntaxOnly": true,
     "exactOptionalPropertyTypes": true,
     "incremental": true,
-    "jsx": "preserve",
+    "jsx": "react-jsx",
     "lib": ["DOM", "DOM.Iterable", "ESNext"],
     "module": "Preserve",
     "moduleDetection": "force",
@@ -18,11 +18,7 @@
     "noImplicitOverride": true,
     "noImplicitReturns": true,
     "noUncheckedIndexedAccess": true,
-    "plugins": [
-      {
-        "name": "next"
-      }
-    ],
+    "plugins": [{ "name": "next" }],
     "skipLibCheck": true,
     "strict": true,
     "target": "ESNext",
@@ -30,5 +26,10 @@
     "verbatimModuleSyntax": true
   },
   "exclude": ["out"],
-  "include": ["**/*", ".dependency-cruiser.js", ".next/types/**/*.ts"]
+  "include": [
+    "**/*",
+    ".dependency-cruiser.js",
+    ".next/types/**/*.ts",
+    ".next/dev/types/**/*.ts"
+  ]
 }
