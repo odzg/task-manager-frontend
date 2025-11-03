@@ -51,7 +51,7 @@
     "@eslint/markdown": "7.5.0",
     "@next/eslint-plugin-next": "16.0.1",
     "@tailwindcss/postcss": "4.1.16",
-    "@types/node": "24.9.2",
+    "@types/node": "24.10.0",
     "@types/react": "19.2.2",
     "@types/react-dom": "19.2.2",
     "babel-plugin-react-compiler": "19.1.0-rc.3",
