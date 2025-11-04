@@ -8,9 +8,9 @@
     "#*": "./src/*"
   },
   "scripts": {
-    "build": "next build --turbopack",
+    "build": "next build",
     "check-spelling": "cspell --no-progress --show-context .",
-    "dev": "next dev --turbopack",
+    "dev": "next dev",
     "format": "prettier --write --cache .",
     "format:check": "prettier --check --cache .",
     "git-commit": "commit",
