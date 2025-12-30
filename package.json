@@ -31,7 +31,7 @@
     "@mui/material-nextjs": "7.3.6",
     "@t3-oss/env-nextjs": "0.13.10",
     "date-fns": "4.1.0",
-    "ky": "1.14.1",
+    "ky": "1.14.2",
     "next": "16.1.1",
     "react": "19.2.3",
     "react-dom": "19.2.3",
