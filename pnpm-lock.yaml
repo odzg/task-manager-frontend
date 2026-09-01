@@ -31,7 +31,7 @@ importers:
         version: 7.3.6(@emotion/cache@11.14.0)(@emotion/react@11.14.0(@types/react@19.2.7)(react@19.2.3))(@types/react@19.2.7)(next@16.1.1(@babel/core@7.28.5)(babel-plugin-react-compiler@19.1.0-rc.3)(react-dom@19.2.3(react@19.2.3))(react@19.2.3))(react@19.2.3)
       '@t3-oss/env-nextjs':
         specifier: 0.13.10
-        version: 0.13.10(typescript@5.9.3)(zod@4.3.4)
+        version: 0.13.10(typescript@5.9.3)(zod@4.5.4)
       date-fns:
         specifier: 4.1.0
         version: 4.1.0
@@ -57,8 +57,8 @@ importers:
         specifier: 3.4.0
         version: 3.4.0
       zod:
-        specifier: 4.3.4
-        version: 4.3.4
+        specifier: 4.5.4
+        version: 4.5.4
     devDependencies:
       '@commitlint/cli':
         specifier: 20.3.0
@@ -2458,6 +2458,7 @@ packages:
   eslint@9.39.2:
     resolution: {integrity: sha512-LEyamqS7W5HB3ujJyvi0HQK/dtVINZvd5mAAp9eT5S/ujByGjiZLCzPcHVzuXbpJDJF/cxwHlfceVUDZ2lnSTw==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
+    deprecated: This version is no longer supported. Please see https://eslint.org/version-support for other options.
     hasBin: true
     peerDependencies:
       jiti: '*'
@@ -2637,6 +2638,7 @@ packages:
   git-raw-commits@4.0.0:
     resolution: {integrity: sha512-ICsMM1Wk8xSGMowkOmPrzo2Fgmfo4bMHLNX6ytHjajRJUqvHOw/TFapQ+QG75c3X/tTDDhOSRPGC52dDbNM8FQ==}
     engines: {node: '>=16'}
+    deprecated: Deprecated and no longer maintained. Use @conventional-changelog/git-client instead.
     hasBin: true
 
   github-slugger@2.0.0:
@@ -4359,8 +4361,8 @@ packages:
     peerDependencies:
       zod: ^3.25.0 || ^4.0.0
 
-  zod@4.3.4:
-    resolution: {integrity: sha512-Zw/uYiiyF6pUT1qmKbZziChgNPRu+ZRneAsMUDU6IwmXdWt5JwcUfy2bvLOCUtz5UniaN/Zx5aFttZYbYc7O/A==}
+  zod@4.5.4:
+    resolution: {integrity: sha512-sC95tT5iHHH9gtpj6A81kh+NEaRAUFN+qlUPDUbRfOMvNf5QCBqsb3WgvnpVtK5Y+4UfA6KqufotuTvMGiTlsA==}
 
   zwitch@2.0.4:
     resolution: {integrity: sha512-bXE4cR/kVZhKZX/RjPEflHaKVhUVl85noU3v6b8apfQEc1x4A+zBxjZ4lN8LqGd6WZ3dl98pY4o717VFmoPp+A==}
@@ -5007,7 +5009,7 @@ snapshots:
       eslint: 9.39.2(jiti@2.6.1)
       ts-pattern: 5.9.0
       typescript: 5.9.3
-      zod: 4.3.4
+      zod: 4.5.4
     transitivePeerDependencies:
       - supports-color
 
@@ -5465,17 +5467,17 @@ snapshots:
     dependencies:
       tslib: 2.8.1
 
-  '@t3-oss/env-core@0.13.10(typescript@5.9.3)(zod@4.3.4)':
+  '@t3-oss/env-core@0.13.10(typescript@5.9.3)(zod@4.5.4)':
     optionalDependencies:
       typescript: 5.9.3
-      zod: 4.3.4
+      zod: 4.5.4
 
-  '@t3-oss/env-nextjs@0.13.10(typescript@5.9.3)(zod@4.3.4)':
+  '@t3-oss/env-nextjs@0.13.10(typescript@5.9.3)(zod@4.5.4)':
     dependencies:
-      '@t3-oss/env-core': 0.13.10(typescript@5.9.3)(zod@4.3.4)
+      '@t3-oss/env-core': 0.13.10(typescript@5.9.3)(zod@4.5.4)
     optionalDependencies:
       typescript: 5.9.3
-      zod: 4.3.4
+      zod: 4.5.4
 
   '@tailwindcss/node@4.1.18':
     dependencies:
@@ -6740,8 +6742,8 @@ snapshots:
       '@babel/parser': 7.28.5
       eslint: 9.39.2(jiti@2.6.1)
       hermes-parser: 0.25.1
-      zod: 4.3.4
-      zod-validation-error: 4.0.2(zod@4.3.4)
+      zod: 4.5.4
+      zod-validation-error: 4.0.2(zod@4.5.4)
     transitivePeerDependencies:
       - supports-color
 
@@ -7494,7 +7496,7 @@ snapshots:
       smol-toml: 1.5.2
       strip-json-comments: 5.0.3
       typescript: 5.9.3
-      zod: 4.3.4
+      zod: 4.5.4
 
   ky@1.14.2: {}
 
@@ -9026,10 +9028,10 @@ snapshots:
 
   yoctocolors-cjs@2.1.3: {}
 
-  zod-validation-error@4.0.2(zod@4.3.4):
+  zod-validation-error@4.0.2(zod@4.5.4):
     dependencies:
-      zod: 4.3.4
+      zod: 4.5.4
 
-  zod@4.3.4: {}
+  zod@4.5.4: {}
 
   zwitch@2.0.4: {}
